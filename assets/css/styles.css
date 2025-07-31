@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+h1, h2 , h3, h4, h5 {
+  font-family: "Goldman", sans-serif;
+}
+
+p, a, li, ul {
+  font-family: "Mozilla Text", sans-serif;
+}
+
 .carousel-inner {
   height: 500px;
   /* o el alto que prefieras */
