@@ -31,8 +31,6 @@ footer {
 }
 
 
-
-
 .about-us {
   background-color: #f8f9fa;
 }
@@ -90,3 +88,9 @@ footer {
     font-size: 16px;
     color: #505050;
 }
+
+.fixed-img-size {
+        height: 200px; /* Ajusta este valor según necesites */
+        object-fit: cover; /* Esto asegura que la imagen mantenga sus proporciones */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
