@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
 
-h1, h2 , h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Goldman", sans-serif;
 }
 
-p, a, li, ul {
+p,
+li,
+ul {
   font-family: "Mozilla Text", sans-serif;
+}
+
+a {
+  font-family: "Mozilla Text", sans-serif;
+  color: white;
+
 }
 
 .carousel-inner {
@@ -64,33 +76,71 @@ footer {
 
 
 .feature-showcase {
-    padding: 60px 0px 20px 0px ;
-    background-color: #ffffff;
+  padding: 60px 0px 20px 0px;
+  background-color: #ffffff;
 }
 
 .feature-box {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .feature-box i {
-    font-size: 40px;
-    color: #505050;
-    margin-bottom: 10px;
+  font-size: 40px;
+  color: #505050;
+  margin-bottom: 10px;
 }
 
 .feature-box h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .feature-box p {
-    font-size: 16px;
-    color: #505050;
+  font-size: 16px;
+  color: #505050;
 }
 
 .fixed-img-size {
-        height: 200px; /* Ajusta este valor según necesites */
-        object-fit: cover; /* Esto asegura que la imagen mantenga sus proporciones */
-        width: 100%; /* Ocupa todo el ancho disponible */
-    }
+  height: 200px;
+  /* Ajusta este valor según necesites */
+  object-fit: cover;
+  /* Esto asegura que la imagen mantenga sus proporciones */
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+}
+
+
+
+/* Estilos para el navbar transparente */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 1001;
+  /* Para que esté por encima del navbar */
+}
+
+/* Asegurar que el carrusel esté debajo */
+.carousel {
+  position: relative;
+  top: -56px;
+  /* Ajusta según la altura de tu navbar */
+  z-index: 1;
+}
+
+/* Ajustar el margen del contenido principal */
+main {
+  margin-top: 56px;
+  /* Igual que el valor de top negativo del carrusel */
+}
+
+
+#asesoramiento {
+
+  background-color: #032749;
+}

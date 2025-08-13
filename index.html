@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>CAVTECH</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/icons/rayo.svg">
@@ -14,21 +15,38 @@
 
 
 <body>
-    <header> <!-- navbar-->
-        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <header>
+        <!-- Barra superior con redes sociales -->
+        <div class="top-bar bg-dark p-2">
+            <div class="container-fluid d-flex justify-content-end">
+                <p class="px-4" style="color: white;">Bienvenido al sitio web Cavtech estamos en Algarrobo, Litoral
+                    Central.</p>
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/cav_tech/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Navbar transparente -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
             <div class="container-fluid">
-                 <a class="nav-link" href="index.html"><H2>CAVTECH</H2></a>
+                <a class="navbar-brand" href="index.html">
+                    <h2>CAVTECH</h2>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="electricidad.html">Electricidad</a>
+                            <a style="color: white; font-size: 18px;" class="nav-link"
+                                href="electricidad.html">Electricidad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="solar.html">Paneles Solares</a>
+                            <a style="color: white; font-size: 18px;" class="nav-link" href="solar.html">Paneles
+                                Solares</a>
                         </li>
                     </ul>
                 </div>
@@ -47,21 +65,21 @@
                     aria-label="Slide 2"></button>
 
             </div>
-            <div class="carousel-inner" style="height:300px;"> <!-- Altura fija para el contenedor -->
-                <div class="carousel-item active h-100"> <!-- h-100 para que ocupe todo el alto -->
+            <div class="carousel-inner" style="height:350px;"> <!-- Altura fija para el contenedor -->
+                <div class="carousel-item active h-100">
                     <img src="assets/img/paneles solares/acciona-energia-solar-fotovoltaica.jpg"
                         class="d-block w-100 h-100 object-fit-cover" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4>PANELES SOLARES</h4>
-                        <p style="font-size: 20px;">Some representative placeholder content for the first slide.</p>
+                        <h3>PANELES SOLARES</h3>
+                        <p style="font-size: 20px;">Instalacion y Mantencion.</p>
                     </div>
                 </div>
                 <div class="carousel-item h-100">
                     <img src="assets/img/electricidad/montador_electricista_domiciliario.jpg"
                         class="d-block w-100 h-100 object-fit-cover" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4>ELECTRICIDAD DOMICILIARIA</h4>
-                        <p style="font-size: 20px;">Some representative placeholder content for the second slide.</p>
+                        <h3>ELECTRICIDAD DOMICILIARIA</h3>
+                        <p style="font-size: 20px;">Instalacion y Mantencion</p>
                     </div>
                 </div>
             </div>
@@ -150,7 +168,8 @@
                     <div class="col-md-3 col-6 mb-4">
                         <div class="text-center">
                             <img class="img-fluid" style="max-width: 180px;"
-                                src="https://seguridadvalparaiso.cl/wp-content/uploads/2018/11/Logo-SEC.jpg" alt="">
+                                src="https://www.sertisec.cl/wp-content/uploads/2017/06/Logo-SEC-png-300x160.png"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -178,7 +197,6 @@
                                         eléctrica de tu hogar es lo primero. ¿Fallas recurrentes, enchufes que no
                                         funcionan, o buscas modernizar tu instalación antigua? Nuestros expertos están
                                         aquí para ayudarte.</p>
-                                        <a href="#" class="btn btn-primary">Más Información</a>
                                 </div>
                             </div>
                         </div>
@@ -187,46 +205,46 @@
             </div>
         </div>
 
-       <div class="container">
-    <div class="row">
-        <div class="card-group">
-            <div class="card m-3 mt-5">
-                <img src="assets/img/electricidad/electricista-trabaja-central-electrica-cable-conexion-electrica_169016-16570.avif"
-                    class="card-img-top img-fluid fixed-img-size" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Actualización de instalaciones eléctricas antiguas</h5>
-                    <p class="card-text">¿Tu casa tiene cables viejos, tomas sueltas o interruptores que no
-                        funcionan bien? Modernizamos instalaciones obsoletas para evitar riesgos de
-                        cortocircuitos e incendios, cumpliendo con los estándares actuales de seguridad.</p>
-                    <p class="card-text"><small class="text-body-secondary">Cambio de cableado, instalación de
-                        protecciones y certificación SEC.</small></p>
-                </div>
-            </div>
-            <div class="card m-3 mt-5">
-                <img src="https://qualifio.org.br/images/2022/05/09/FIOS%20E%20CABOS%20ELETRICOS%20IRREGULARES%20-%20QUALIFIO%20BLOG.png" 
-                    class="card-img-top img-fluid fixed-img-size" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Solución a problemas de sobrecarga</h5>
-                    <p class="card-text">¿Se te apagan los fusibles seguido o sientes olor a quemado en los
-                        enchufes? Diagnosticamos y reparamos circuitos sobrecargados, redistribuyendo la carga
-                        eléctrica para evitar daños en tus electrodomésticos y riesgos de incendio.</p>
-                    <p class="card-text"><small class="text-body-secondary">Análisis de consumo, balanceo de
-                        circuitos e instalación de protecciones.</small></p>
-                </div>
-            </div>
-            <div class="card m-3 mt-5">
-                <img src="..." class="card-img-top img-fluid fixed-img-size" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Asesoría Profesional para Decisiones Eléctricas Seguras</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal
-                        height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <div class="container">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card m-3 mt-5">
+                        <img src="assets/img/electricidad/electricista-trabaja-central-electrica-cable-conexion-electrica_169016-16570.avif"
+                            class="card-img-top img-fluid fixed-img-size" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Actualización de instalaciones eléctricas antiguas</h5>
+                            <p class="card-text">¿Tu casa tiene cables viejos, tomas sueltas o interruptores que no
+                                funcionan bien? Modernizamos instalaciones obsoletas para evitar riesgos de
+                                cortocircuitos e incendios, cumpliendo con los estándares actuales de seguridad.</p>
+                            <p class="card-text"><small class="text-body-secondary">Cambio de cableado, instalación de
+                                    protecciones y certificación SEC.</small></p>
+                        </div>
+                    </div>
+                    <div class="card m-3 mt-5">
+                        <img src="https://qualifio.org.br/images/2022/05/09/FIOS%20E%20CABOS%20ELETRICOS%20IRREGULARES%20-%20QUALIFIO%20BLOG.png"
+                            class="card-img-top img-fluid fixed-img-size" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Solución a problemas de sobrecarga</h5>
+                            <p class="card-text">¿Se te apagan los fusibles seguido o sientes olor a quemado en los
+                                enchufes? Diagnosticamos y reparamos circuitos sobrecargados, redistribuyendo la carga
+                                eléctrica para evitar daños en tus electrodomésticos y riesgos de incendio.</p>
+                            <p class="card-text"><small class="text-body-secondary">Análisis de consumo, balanceo de
+                                    circuitos e instalación de protecciones.</small></p>
+                        </div>
+                    </div>
+                    <div class="card m-3 mt-5">
+                        <img src="..." class="card-img-top img-fluid fixed-img-size" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Asesoría Profesional para Decisiones Eléctricas Seguras</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
         <!--Ubicacion-->
         <div class="container-fluid feature-showcase">
@@ -257,6 +275,20 @@
             </div>
         </div>
 
+
+        <section class="container-fluid p-5 text-center text-light" id="asesoramiento">
+            <div class="">
+                <h2>Agenda una visita técnica y evaluamos tus requerimientos energéticos</h2>
+                <p style="font-size: 18px;">Ofrecemos una visita comercial gratuita; para diagnósticos técnicos y soluciones
+                    específicas, es necesario aceptar el presupuesto o contratar el servicio.</p>
+                <h4>Llama ahora: +569 67171669</h4>
+                <a href="https://wa.me/56994132541" class="btn btn-primary m-2 animate__animated"
+                    onmouseover="this.classList.add('animate__headShake')" onmouseout="this.classList.remove('nimate__headShake')">
+                    o envíanos un mensaje
+                </a>
+            </div>
+        </section>
+
         <!--Paneles Solares-->
         <div class="container-fluid bg-body-secondary p-5" id="PANELES">
             <div class="row">
@@ -273,7 +305,7 @@
                                         reality with cutting-edge technology and creative design.</p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg"
+                                    <img src="https://static.wixstatic.com/media/11062b_669cbdf84a7e4ad4817c73950b6d468e~mv2.jpg/v1/fill/w_2500,h_1666,al_c/11062b_669cbdf84a7e4ad4817c73950b6d468e~mv2.jpg"
                                         class="img-fluid rounded shadow" alt="About Us">
                                 </div>
                             </div>
@@ -358,8 +390,12 @@
                 <div class="col-md-4 mb-3">
                     <h5>Siguenos</h5>
                     <ul class="list-inline social-icons">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/cav_tech/" class="text-white"><i
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/cav_tech/" class="text-white mx-2"><i
                                     class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
