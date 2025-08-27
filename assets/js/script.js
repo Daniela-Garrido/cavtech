@@ -62,7 +62,7 @@ function animateCountersOnScroll() {
         }
     }
     
-    // Versión simple de animateCounters
+    // animateCounters
     function animateCounters() {
         counters.forEach(counter => {
             const target = parseInt(counter.textContent);
