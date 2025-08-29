@@ -9,6 +9,10 @@ h5 {
   font-family: "Goldman", sans-serif;
 }
 
+h3{
+    font-size: 15px;
+}
+
 p,
 li,
 ul {
@@ -593,7 +597,7 @@ main {
     initial-value: 96%
 }
 
-#asesoramiento {
+#asesoramiento{
     --x-0: 93%;
     --c-0: hsla(217.59493670886076, 100%, 30%, 1);
     --y-0: 63%;

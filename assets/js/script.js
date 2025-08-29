@@ -32,7 +32,7 @@ if (elemento) {
     // Añadir transición CSS para suavizar el cambio
     elemento.style.transition = "opacity 0.5s ease-in-out";
     
-    // Iniciar el cambio automático cada 3 segundos
+    // Iniciar el cambio automático cada 2,5 segundos
     setInterval(cambiarTitulo, 2500);
 } else {
     console.error("No se encontró el elemento con ID 'titulo1'");
@@ -68,7 +68,7 @@ function animateCountersOnScroll() {
             const target = parseInt(counter.textContent);
             let current = 0;
             const duration = 3000;
-            const frameRate = 30;
+            const frameRate = 20;
             const totalFrames = Math.floor(duration / (1000 / frameRate));
             const increment = target / totalFrames;
             
